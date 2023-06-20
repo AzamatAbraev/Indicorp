@@ -1,0 +1,144 @@
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  padding: 24px 0px;
+  background-color: #fafafa;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-logo h3 a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: var(--primary-text-color);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--secondary-text-color);
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.nav-link:hover {
+  color: var(--primary-text-color);
+}
+
+
+
+.hamburger button {
+  background-color: transparent;
+  border: none;
+  display: none;
+  position: absolute;
+}
+
+.hamburger {
+  display: inline-block;
+}
+
+.res-nav-list {
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 60px;
+}
+
+.res-nav-link {
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 45px;
+  letter-spacing: 0.2px;
+  color: var(--secondary-text-color);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.res-nav-link:hover {
+  color: var(--primary-text-color);
+}
+
+#navbar-responsive {
+  position: fixed;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 80px;
+  top: -100%;
+  bottom: 60px;
+  left: 0;
+  height: 356px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+#navbar-close {
+  position: absolute;
+  top: -46px;
+  right: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 20px;
+  }
+
+  nav {
+    background-color: #f7f7f7;
+  }
+}
